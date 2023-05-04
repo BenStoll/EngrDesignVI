@@ -1,4 +1,4 @@
-# Lab 1 File will be stored here
+# Lab 2 - Command Line
 ## I will be going through the commands and show exactly what they do on my machine.
 
 ```
