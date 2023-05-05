@@ -1,7 +1,7 @@
 # EngrDesignVI
 ## CPE 322-A
 ### This repo will be the contents of the class CPE 322-A also known as Engineering Design VI. Stevens Institute of Technology
-#### THe labs are as follows:
+#### The labs are as follows:
  - Lab 1: GHDL and GTKWave
     * Not Done - issues with running the software
  - [Lab 2: Command Line](https://github.com/BenStoll/EngrDesignVI/tree/main/Lab2)
