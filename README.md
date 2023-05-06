@@ -1,8 +1,7 @@
 # EngrDesignVI
 ## CPE 322-A
-### This repository will be the contents of the class CPE 322-A
-#### Engineering Design VI at Stevens Institute of Technology
-##### Credit belongs to [Kevin Lu](https://github.com/kevinwlu/iot)
+### Engineering Design VI at Stevens Institute of Technology
+#### Credit belongs to [Kevin Lu](https://github.com/kevinwlu/iot)
 
 ![Icon](https://github.com/BenStoll/EngrDesignVI/blob/main/Assets/Old_Stevens_Logo.png "Old Snevets Logo")
 
