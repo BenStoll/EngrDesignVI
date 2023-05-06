@@ -22,5 +22,5 @@
     * Not Done
  - [Lab 9: Yang](https://github.com/BenStoll/EngrDesignVI/tree/main/Lab9)
     * Not Done - Issues with intrusiondetection.yin
- - [Lab 10: Blockchain](https://github.com/BenStoll/EngrDesignVI/tree/main/Lab10)
-    * Not Done - Issues with the code running in the terminal. 
+ - [Lab 10: Blockchain](https://github.com/kevinwlu/iot/tree/master/lesson10)
+    * [Finished](https://github.com/BenStoll/EngrDesignVI/tree/main/Lab10)
