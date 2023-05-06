@@ -1,6 +1,6 @@
 # EngrDesignVI
 ## CPE 322-A
-### This repository will be the contents of the class CPE 322-A E
+### This repository will be the contents of the class CPE 322-A
 #### Engineering Design VI at Stevens Institute of Technology
 
 ![Icon](https://github.com/BenStoll/EngrDesignVI/blob/main/Assets/Old_Stevens_Logo.png "Old Snevets Logo")
