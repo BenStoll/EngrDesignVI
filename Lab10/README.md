@@ -319,5 +319,83 @@ node.run()
 
 ### Run snakecoin-server-full-code.py
 ```
-ERROR
+PS C:\Users\stoll\iot\lesson10> python snakecoin-server-full-code.py
+ * Serving Flask app 'snakecoin-server-full-code'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+New transaction
+FROM: b'akjflw'
+TO: b'fjlakdj'
+AMOUNT: 3
+
+127.0.0.1 - - [06/May/2023 16:22:27] "POST /txion HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2023 16:22:48] "GET /mine HTTP/1.1" 200 -
+
+
+Terminal 2:
+PS C:\Users\stoll\iot\lesson10> Invoke-RestMethod "http://localhost:5000/txion" -ContentType 'application/json' -Method Post -Body '{"from": "akjflw", "to":"fjlakdj", "amount": 3}'
+Transaction submission successful
+
+PS C:\Users\stoll\iot\lesson10>  Invoke-RestMethod "http://localhost:5000/mine"
+
+index timestamp                  data
+----- ---------                  ----
+    1 2023-05-06 16:22:48.162890 @{proof-of-work=18; t...
+
 ```
+![image](https://user-images.githubusercontent.com/98097869/236645025-7dfb1422-dd6e-40ab-8ac8-45ed4bafe29f.png)
+
+I had some issues with running the code, but I looked it up and discussed with my peers and I figured out that I needed to run a different version of the code. 
+
+### Running the Blockchain App
+
+```
+Terminal 1:
+PS C:\Users\stoll> git clone https://github.com/satwikkansal/python_blockchain_app.git
+Cloning into 'python_blockchain_app'...
+remote: Enumerating objects: 173, done.
+remote: Counting objects: 100% (72/72), done.
+remote: Compressing objects: 100% (28/28), done.
+Receiving objectsremote: Total 173 (delta 52), reused 56 (delta 43), pack-reused 101
+Receiving objects: 100% (173/173), 230.00 KiB | 1.19 MiB/s, done.
+Resolving deltas: 100% (84/84), done.
+PS C:\Users\stoll> cd ~/python_blockchain_app
+PS C:\Users\stoll\python_blockchain_app> nano node_server.py
+PS C:\Users\stoll\python_blockchain_app> python node_server.py
+ * Serving Flask app 'node_server'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 973-954-183
+127.0.0.1 - - [06/May/2023 16:31:02] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [06/May/2023 16:31:02] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [06/May/2023 16:31:14] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [06/May/2023 16:31:16] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [06/May/2023 16:32:58] "GET /chain HTTP/1.1" 200 -
+
+Terminal 2:
+PS C:\Users\stoll> cd ~/python_blockchain_app
+PS C:\Users\stoll\python_blockchain_app>
+PS C:\Users\stoll\python_blockchain_app> python run_app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 973-954-183
+127.0.0.1 - - [06/May/2023 16:32:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2023 16:32:58] "GET /favicon.ico HTTP/1.1" 404 -
+```
+
+![image](https://user-images.githubusercontent.com/98097869/236645595-f656a87c-2a35-4b7b-a5ec-3807ed300a26.png)
+
+![image](https://user-images.githubusercontent.com/98097869/236645641-11baa086-f720-47b0-8be7-dc947833bb3f.png)
+
+![image](https://user-images.githubusercontent.com/98097869/236645674-18ffffe2-9245-4da5-a1ab-bc253d8a79e2.png)
